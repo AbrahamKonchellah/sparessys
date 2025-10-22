@@ -1,0 +1,29 @@
+@model IEnumerable<SparePartsWeb.Models.UserRolesViewModel>
+
+@{
+    ViewData["Title"] = "User Role Management";
+}
+
+<h2>User Role Management</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Roles</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>@string.Join(", ", user.Roles)</td>
+                <td>
+                    <a class="btn btn-sm btn-primary" asp-action="Manage" asp-route-userId="@user.UserId">Manage Roles</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

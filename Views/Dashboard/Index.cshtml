@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<h2 class="mb-4">📊 Dashboard Overview</h2>
+
+<div class="row text-center">
+    <div class="col-md-4">
+        <div class="card shadow-sm border-primary mb-3">
+            <div class="card-body">
+                <h4 class="card-title text-primary">Equipments</h4>
+                <h3>@ViewBag.EquipmentsCount</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm border-success mb-3">
+            <div class="card-body">
+                <h4 class="card-title text-success">Vendors</h4>
+                <h3>@ViewBag.VendorsCount</h3>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card shadow-sm border-warning mb-3">
+            <div class="card-body">
+                <h4 class="card-title text-warning">Spare Parts</h4>
+                <h3>@ViewBag.SparePartsCount</h3>
+            </div>
+        </div>
+    </div>
+</div>

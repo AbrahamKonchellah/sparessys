@@ -1,0 +1,67 @@
+@model SparePartsWeb.Models.SparePart
+
+@{
+    ViewData["Title"] = "Edit Spare Part";
+}
+
+<h2>Edit Spare Part</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Brand" class="form-label"></label>
+        <input asp-for="Brand" class="form-control" />
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+
+    <!-- ✅ Category Dropdown (string-based, not relational) -->
+    <div class="mb-3">
+        <label asp-for="Category" class="form-label"></label>
+        <select asp-for="Category" class="form-select">
+            <option value="">-- Select Category --</option>
+            <option>Engine</option>
+            <option>Electrical</option>
+            <option>Body</option>
+            <option>Suspension</option>
+            <option>Transmission</option>
+            <option>Braking System</option>
+            <option>Cooling System</option>
+            <option>Interior</option>
+        </select>
+        <span asp-validation-for="Category" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Price" class="form-label"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Quantity" class="form-label"></label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="VendorId" class="form-label">Vendor</label>
+        <select asp-for="VendorId" class="form-select" asp-items="ViewBag.VendorList">
+            <option value="">-- Select Vendor --</option>
+        </select>
+        <span asp-validation-for="VendorId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

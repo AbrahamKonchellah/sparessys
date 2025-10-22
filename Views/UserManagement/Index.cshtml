@@ -1,0 +1,21 @@
+@model IEnumerable<SparePartsWeb.Models.ApplicationUser>
+
+<h2>👥 User Management</h2>
+
+<table class="table table-bordered mt-3">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Username</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Email</td>
+                <td>@user.UserName</td>
+            </tr>
+        }
+    </tbody>
+</table>

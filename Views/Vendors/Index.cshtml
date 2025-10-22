@@ -1,0 +1,38 @@
+@model IEnumerable<SparePartsWeb.Models.Vendor>
+
+@{
+    ViewData["Title"] = "Vendors";
+}
+
+<h2>Vendors</h2>
+<a asp-action="Create" class="btn btn-primary mb-3">Add New Vendor</a>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Rating</th>
+            <th>Lead Time (Days)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var vendor in Model)
+        {
+            <tr>
+                <td>@vendor.Name</td>
+                <td>@vendor.ContactEmail</td>
+                <td>@vendor.Phone</td>
+                <td>@vendor.ReliabilityScore</td>
+                <td>@vendor.AverageLeadTimeDays</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@vendor.Id" class="btn btn-sm btn-info">Details</a>
+                    <a asp-action="Edit" asp-route-id="@vendor.Id" class="btn btn-sm btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@vendor.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

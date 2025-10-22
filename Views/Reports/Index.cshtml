@@ -1,0 +1,72 @@
+@model IEnumerable<SparePartsWeb.Models.SparePart>
+
+@{
+    ViewData["Title"] = "Spare Parts Report";
+}
+
+<h2 class="mb-4">📊 Spare Parts Inventory Report</h2>
+
+<a class="btn btn-primary mb-3" href="@Url.Action("GeneratePdf", "Reports")">
+    📄 Download PDF Report
+</a>
+
+<table id="sparePartsTable" class="table table-bordered table-striped align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Vendor</th>
+            <th>Quantity</th>
+            <th>Price (Ksh)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var part in Model)
+        {
+            <tr>
+                <td>@part.Id</td>
+                <td>@part.Name</td>
+                <td>@part.Brand</td>
+                <td>@(part.Vendor?.Name ?? "—")</td>
+                <td>@part.Quantity</td>
+                <td>@part.Price.ToString("N2")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- ✅ Optional total value summary -->
+@{
+    var totalValue = Model.Sum(p => p.Price * p.Quantity);
+}
+<div class="text-end mt-3">
+    <strong>Total Inventory Value:</strong>
+    Ksh @totalValue.ToString("N2")
+</div>
+
+@section Scripts {
+    <!-- ✅ DataTables dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
+
+    <script>
+        $(document).ready(function () {
+            $('#sparePartsTable').DataTable({
+                pageLength: 10,
+                lengthMenu: [5, 10, 20, 50],
+                language: {
+                    search: "🔍 Search:",
+                    lengthMenu: "Show _MENU_ entries per page",
+                    info: "Showing _START_ to _END_ of _TOTAL_ parts",
+                    paginate: {
+                        previous: "⬅️",
+                        next: "➡️"
+                    }
+                }
+            });
+        });
+    </script>
+}

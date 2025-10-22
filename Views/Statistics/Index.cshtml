@@ -1,0 +1,96 @@
+@{
+    ViewData["Title"] = "Statistics Dashboard";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">📊 SpareParts Analytics Dashboard</h2>
+
+    <div class="row g-4">
+        <!-- Chart 1: Parts by Vendor -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 h-100">
+                <h5 class="text-center mb-3">🧰 Spare Parts by Vendor</h5>
+                <canvas id="partsByVendorChart" height="250"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 2: Parts by Category -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 h-100">
+                <h5 class="text-center mb-3">🧩 Spare Parts by Category</h5>
+                <canvas id="partsByCategoryChart" height="250"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 3: Low Stock Parts -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 h-100">
+                <h5 class="text-center mb-3">⚠️ Low Stock Parts (Qty < 5)</h5>
+                <canvas id="lowStockChart" height="250"></canvas>
+            </div>
+        </div>
+
+        <!-- Chart 4: Recent Additions -->
+        <div class="col-md-6">
+            <div class="card shadow-sm p-4 h-100">
+                <h5 class="text-center mb-3">🕒 Recent Additions (Last 5 Parts)</h5>
+                <canvas id="recentPartsChart" height="250"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Data passed from Controller
+        const vendorNames = @Html.Raw(Json.Serialize(ViewBag.VendorNames ?? new List<string>()));
+        const vendorCounts = @Html.Raw(Json.Serialize(ViewBag.PartCounts ?? new List<int>()));
+        const categories = @Html.Raw(Json.Serialize(ViewBag.Categories ?? new List<string>()));
+        const categoryCounts = @Html.Raw(Json.Serialize(ViewBag.CategoryCounts ?? new List<int>()));
+        const lowStockNames = @Html.Raw(Json.Serialize(ViewBag.LowStockNames ?? new List<string>()));
+        const lowStockQty = @Html.Raw(Json.Serialize(ViewBag.LowStockQty ?? new List<int>()));
+        const recentNames = @Html.Raw(Json.Serialize(ViewBag.RecentNames ?? new List<string>()));
+        const recentQty = @Html.Raw(Json.Serialize(ViewBag.RecentQty ?? new List<int>()));
+
+        const colors = ['#4CAF50', '#2196F3', '#FF9800', '#E91E63', '#9C27B0', '#00BCD4', '#8BC34A', '#FFC107', '#795548'];
+
+        // Chart 1: Parts by Vendor
+        new Chart(document.getElementById('partsByVendorChart'), {
+            type: 'bar',
+            data: { labels: vendorNames, datasets: [{ label: 'Parts Count', data: vendorCounts, backgroundColor: colors }] },
+            options: { responsive: true, plugins: { legend: { display: false }, title: { display: true, text: 'Parts per Vendor' } } }
+        });
+
+        // Chart 2: Parts by Category
+        new Chart(document.getElementById('partsByCategoryChart'), {
+            type: 'pie',
+            data: { labels: categories, datasets: [{ data: categoryCounts, backgroundColor: colors }] },
+            options: { responsive: true, plugins: { legend: { position: 'bottom' }, title: { display: true, text: 'Parts per Category' } } }
+        });
+
+        // Chart 3: Low Stock
+        new Chart(document.getElementById('lowStockChart'), {
+            type: 'bar',
+            data: { labels: lowStockNames, datasets: [{ label: 'Quantity', data: lowStockQty, backgroundColor: '#E91E63' }] },
+            options: { responsive: true, scales: { y: { beginAtZero: true } }, plugins: { title: { display: true, text: 'Low Stock Parts' } } }
+        });
+
+        // Chart 4: Recent Additions
+        new Chart(document.getElementById('recentPartsChart'), {
+            type: 'line',
+            data: {
+                labels: recentNames,
+                datasets: [{
+                    label: 'Quantity',
+                    data: recentQty,
+                    borderColor: '#2196F3',
+                    fill: true,
+                    tension: 0.3,
+                    backgroundColor: 'rgba(33,150,243,0.2)'
+                }]
+            },
+            options: { responsive: true, plugins: { title: { display: true, text: 'Recent Parts Added' } } }
+        });
+    </script>
+}

@@ -1,0 +1,48 @@
+@model SparePartsWeb.Models.Equipment
+
+@{
+    ViewData["Title"] = "Edit Equipment";
+}
+
+<h2 class="mb-4">Edit Equipment</h2>
+
+<form asp-action="Edit" method="post" class="card p-4 shadow-sm">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="Description" class="form-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="PurchaseDate" class="form-label"></label>
+        <input asp-for="PurchaseDate" class="form-control" type="date" />
+        <span asp-validation-for="PurchaseDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="LastMaintenanceDate" class="form-label"></label>
+        <input asp-for="LastMaintenanceDate" class="form-control" type="date" />
+        <span asp-validation-for="LastMaintenanceDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="BookValue" class="form-label"></label>
+        <input asp-for="BookValue" class="form-control" />
+        <span asp-validation-for="BookValue" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

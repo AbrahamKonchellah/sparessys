@@ -1,0 +1,70 @@
+@model IEnumerable<SparePartsWeb.Models.SparePart>
+
+@{
+    ViewData["Title"] = "Spare Parts";
+}
+
+<h2 class="mb-4">🧩 Spare Parts Inventory</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary mb-3">➕ Add New Spare Part</a>
+</p>
+
+<table id="sparePartsTable" class="table table-bordered table-striped align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Category</th>
+            <th>Price (Ksh)</th>
+            <th>Quantity</th>
+            <th>Vendor</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var part in Model)
+    {
+        <tr>
+            <td>@part.Name</td>
+            <td>@part.Brand</td>
+            <td>@part.Category</td>
+            <td>@part.Price.ToString("N2")</td>
+            <td>@part.Quantity</td>
+            <td>@(part.Vendor?.Name ?? "—")</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@part.Id" class="btn btn-sm btn-warning">✏️ Edit</a>
+                <a asp-action="Details" asp-route-id="@part.Id" class="btn btn-sm btn-info">🔍 Details</a>
+                <a asp-action="Delete" asp-route-id="@part.Id" class="btn btn-sm btn-danger">🗑️ Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section Scripts {
+    <!-- ✅ jQuery + DataTables -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" />
+
+    <script>
+        $(document).ready(function () {
+            $('#sparePartsTable').DataTable({
+                pageLength: 10,
+                lengthMenu: [5, 10, 20, 50],
+                order: [[0, 'asc']], // Default sort by Name
+                language: {
+                    search: "🔍 Search:",
+                    lengthMenu: "Show _MENU_ parts per page",
+                    info: "Showing _START_ to _END_ of _TOTAL_ parts",
+                    paginate: {
+                        previous: "⬅️",
+                        next: "➡️"
+                    }
+                }
+            });
+        });
+    </script>
+}

@@ -1,0 +1,52 @@
+@model SparePartsWeb.Models.Vendor
+
+@{
+    ViewData["Title"] = "Add Vendor";
+}
+
+<h2>Add Vendor</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ContactEmail"></label>
+        <input asp-for="ContactEmail" class="form-control" />
+        <span asp-validation-for="ContactEmail" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Phone"></label>
+        <input asp-for="Phone" class="form-control" />
+        <span asp-validation-for="Phone" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="AverageLeadTimeDays"></label>
+        <input asp-for="AverageLeadTimeDays" class="form-control" />
+        <span asp-validation-for="AverageLeadTimeDays" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ReliabilityScore"></label>
+        <input asp-for="ReliabilityScore" class="form-control" placeholder="eg.0-10"/>
+        <span asp-validation-for="ReliabilityScore" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
