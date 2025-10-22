@@ -9,14 +9,10 @@ using SparePartsWeb.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ----------------------------------------------------
-// 1️⃣ Add MVC (Controllers + Views)
-// ----------------------------------------------------
+
 builder.Services.AddControllersWithViews();
 
-// ----------------------------------------------------
-// 2️⃣ Configure MySQL Database
-// ----------------------------------------------------
+
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -24,9 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     )
 );
 
-// ----------------------------------------------------
-// 3️⃣ Configure ASP.NET Core Identity
-// ----------------------------------------------------
+
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 {
     // Password settings
@@ -40,11 +34,9 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders()
-.AddDefaultUI(); // ✅ enables built-in Identity UI
+.AddDefaultUI(); 
 
-// ----------------------------------------------------
-// 4️⃣ Configure Application Cookie
-// ----------------------------------------------------
+
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/Identity/Account/Login";
@@ -52,22 +44,15 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
 
-// ----------------------------------------------------
-// 5️⃣ Register Email Service
-// ----------------------------------------------------
 builder.Services.Configure<EmailSettings>(
     builder.Configuration.GetSection("EmailSettings"));
 
 // Register the email sender
 builder.Services.AddScoped<IEmailSender, EmailService>();
-// ----------------------------------------------------
-// 6️⃣ Build the app
-// ----------------------------------------------------
+
 var app = builder.Build();
 
-// ----------------------------------------------------
-// 7️⃣ Configure Middleware Pipeline
-// ----------------------------------------------------
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -88,9 +73,7 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}"
 );
 
-// ----------------------------------------------------
-// 8️⃣ Seed Roles & Default Admin User
-// ----------------------------------------------------
+
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -104,7 +87,5 @@ using (var scope = app.Services.CreateScope())
     }
 }
 
-// ----------------------------------------------------
-// 9️⃣ Run the app
-// ----------------------------------------------------
+
 await app.RunAsync();
