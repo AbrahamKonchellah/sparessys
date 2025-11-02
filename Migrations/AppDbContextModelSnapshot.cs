@@ -229,14 +229,14 @@ namespace SparePartsWeb.Migrations
                     b.Property<decimal>("BookValue")
                         .HasColumnType("decimal(65,30)");
 
+                    b.Property<string>("Brand")
+                        .HasMaxLength(500)
+                        .HasColumnType("varchar(500)");
+
                     b.Property<string>("Category")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("varchar(100)");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("varchar(500)");
 
                     b.Property<DateTime?>("LastMaintenanceDate")
                         .HasColumnType("datetime(6)");
@@ -303,7 +303,8 @@ namespace SparePartsWeb.Migrations
 
                     b.Property<string>("Category")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar(100)");
 
                     b.Property<string>("Name")
                         .IsRequired()

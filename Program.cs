@@ -31,6 +31,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 
     // User settings
     options.User.RequireUniqueEmail = true;
+    
+    options.SignIn.RequireConfirmedEmail = true;
 })
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders()
@@ -44,11 +46,12 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
 
-builder.Services.Configure<EmailSettings>(
-    builder.Configuration.GetSection("EmailSettings"));
 
-// Register the email sender
-builder.Services.AddScoped<IEmailSender, EmailService>();
+
+// Register Email Service
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.AddScoped<IEmailService, EmailService>();
+
 
 var app = builder.Build();
 
@@ -60,7 +63,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles(); // ✅ ensure static files load (CSS/JS/images)
+app.UseStaticFiles(); //  ensure static files load (CSS/JS/images)
 
 app.UseRouting();
 

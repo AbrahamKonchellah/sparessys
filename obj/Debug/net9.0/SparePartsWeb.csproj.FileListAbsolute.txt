@@ -292,6 +292,7 @@ C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\SparePartsWeb.MvcAp
 C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\SparePartsWeb.MvcApplicationPartsAssemblyInfo.cache
 C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\SparePartsWeb.RazorAssemblyInfo.cache
 C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\SparePartsWeb.RazorAssemblyInfo.cs
+C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\SparePartsWeb.sourcelink.json
 C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

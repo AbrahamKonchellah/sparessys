@@ -15,14 +15,14 @@ namespace SparePartsWeb.Models
         public string Model { get; set; } = string.Empty;
 
         [MaxLength(500)]
-        public string? Description { get; set; }  
+        public string? Brand { get; set; } = string.Empty;
 
         [Required]
         [MaxLength(100)]
         public string Category { get; set; } = string.Empty;
 
         [Range(0, double.MaxValue)]
-        public decimal BookValue { get; set; }
+        public int BookValue { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime PurchaseDate { get; set; } = DateTime.Now;

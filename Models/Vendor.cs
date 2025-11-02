@@ -21,10 +21,10 @@ namespace SparePartsWeb.Models
         public string Address { get; set; } = string.Empty;
 
         [Range(0, double.MaxValue)]
-        public decimal AverageLeadTimeDays { get; set; }
+        public int AverageLeadTimeDays { get; set; }
 
         [Range(0, double.MaxValue)]
-        public decimal ReliabilityScore { get; set; } // e.g. 0–100
+        public int ReliabilityScore { get; set; } // e.g. 0–100
 
         public ICollection<SparePart>? SpareParts { get; set; }
     }

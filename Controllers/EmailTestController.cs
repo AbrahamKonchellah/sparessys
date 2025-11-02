@@ -5,17 +5,16 @@ namespace SparePartsWeb.Controllers
 {
     public class EmailTestController : Controller
     {
-        private readonly EmailService _emailService;
+        private readonly IEmailService _emailService;
 
-        public EmailTestController(EmailService emailService)
+        public EmailTestController(IEmailService emailService)
         {
             _emailService = emailService;
         }
-
-        [HttpGet("/test-email")]
+        [HttpGet("test-email")]
         public async Task<IActionResult> SendTestEmail()
         {
-            string toEmail = "bonimechii80@gmail.com"; // 🟡 replace with your actual email
+            string toEmail = "bonilinux70@gmail.com"; // 🟡 replace with your actual email
             string subject = "✅ Email Test from SparePartsWeb";
             string message = "Hello! This is a test email from your ASP.NET Core app.";
 

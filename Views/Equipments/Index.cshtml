@@ -10,24 +10,73 @@
     <a asp-action="Create" class="btn btn-primary">Add New Equipment</a>
 </p>
 
-<table class="table table-striped">
+<div class="mb-3 d-flex align-items-center gap-2">
+    <label for="searchBy" class="form-label"><strong>Search by:</strong></label>
+    <select id="searchBy" class="form-select" style="width: 200px;">
+        <option value="all">All</option>
+        <option value="name">Name</option>
+        <option value="category">Category</option>
+        <option value="brand">Brand</option>
+        <option value="purchaseDate">Purchase Date</option>
+        <option value="lastMaintenanceDate">Last Maintenance Date</option>
+        <option value="bookValue">Book Value</option>
+    </select>
+
+    <input type="text" id="searchInput" class="form-control" placeholder="Enter search term..." style="width: 300px;" />
+</div>
+
+<table class="table table-striped" id="equipmentTable">
     <thead>
         <tr>
             <th>Name</th>
             <th>Category</th>
+            <th>Brand</th>
+            <th>Purchase Date</th>
             <th>Last Maintenance Date</th>
             <th>Book Value</th>
         </tr>
     </thead>
     <tbody>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.Name</td>
-            <td>@item.Category</td>
-            <td>@(item.LastMaintenanceDate?.ToShortDateString() ?? "N/A")</td>
-            <td>@item.BookValue</td>
-        </tr>
-    }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td data-field="name">@item.Name</td>
+                <td data-field="category">@item.Category</td>
+                <td data-field="brand">@item.Brand</td>
+                <td data-field="purchaseDate">@item.PurchaseDate.ToShortDateString()</td>
+                <td data-field="lastMaintenanceDate">@(item.LastMaintenanceDate?.ToShortDateString() ?? "N/A")</td>
+                <td data-field="bookValue">@item.BookValue</td>
+            </tr>
+        }
     </tbody>
 </table>
+
+@section Scripts {
+    <script>
+        const searchInput = document.getElementById("searchInput");
+        const searchBy = document.getElementById("searchBy");
+        const rows = document.querySelectorAll("#equipmentTable tbody tr");
+
+        searchInput.addEventListener("keyup", function () {
+            const query = this.value.toLowerCase();
+            const filter = searchBy.value;
+
+            rows.forEach(row => {
+                const cells = row.querySelectorAll("td");
+                let match = false;
+
+                if (filter === "all") {
+                    // Search in all columns
+                    match = Array.from(cells).some(td => td.textContent.toLowerCase().includes(query));
+                } else {
+                    const cell = row.querySelector(`[data-field='${filter}']`);
+                    if (cell && cell.textContent.toLowerCase().includes(query)) {
+                        match = true;
+                    }
+                }
+
+                row.style.display = match ? "" : "none";
+            });
+        });
+    </script>
+}

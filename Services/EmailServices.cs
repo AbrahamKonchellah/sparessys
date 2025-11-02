@@ -1,12 +1,10 @@
-using Microsoft.AspNetCore.Identity.UI.Services;
-
-using Microsoft.Extensions.Options;
 using System.Net;
 using System.Net.Mail;
+using Microsoft.Extensions.Options;
 
 namespace SparePartsWeb.Services
 {
-    public class EmailService : IEmailSender
+    public class EmailService : IEmailService  
     {
         private readonly EmailSettings _settings;
 
@@ -15,7 +13,7 @@ namespace SparePartsWeb.Services
             _settings = options.Value;
         }
 
-        public async Task SendEmailAsync(string email, string subject, string htmlMessage)
+        public async Task SendEmailAsync(string to, string subject, string htmlMessage)
         {
             using var client = new SmtpClient(_settings.SmtpServer, _settings.Port)
             {
@@ -30,7 +28,7 @@ namespace SparePartsWeb.Services
                 Body = htmlMessage,
                 IsBodyHtml = true
             };
-            mail.To.Add(email);
+            mail.To.Add(to);
 
             await client.SendMailAsync(mail);
         }
