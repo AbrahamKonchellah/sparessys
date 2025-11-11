@@ -21,7 +21,7 @@
         <span asp-validation-for="Brand" class="text-danger"></span>
     </div>
 
-    <!-- ✅ Category Dropdown -->
+    <!-- Category  -->
     <div class="mb-3">
         <label asp-for="Category" class="form-label"></label>
         <select asp-for="Category" class="form-select">
@@ -53,7 +53,7 @@
     <div class="mb-3">
         <label asp-for="VendorId" class="form-label">Vendor</label>
         <select asp-for="VendorId" class="form-select" asp-items="ViewBag.VendorList">
-            <option value="">-- Select Vendor --</option>
+            <option value="">Select Vendor</option>
         </select>
         <span asp-validation-for="VendorId" class="text-danger"></span>
     </div>

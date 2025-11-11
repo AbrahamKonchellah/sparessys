@@ -49,7 +49,7 @@ namespace SparePartsWeb.Controllers
             return View();
         }
 
-        // ✅ Generate Restock Report as PDF
+        // Generate Restock Report as PDF
         public async Task<IActionResult> GenerateRestockReport()
         {
             int targetLevel = 10;

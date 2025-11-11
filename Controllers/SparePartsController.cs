@@ -113,7 +113,7 @@ namespace SparePartsWeb.Controllers
             {
                 _context.Update(sparePart);
                 await _context.SaveChangesAsync();
-                TempData["Success"] = $"✅ Spare part '{sparePart.Name}' updated successfully.";
+                TempData["Success"] = $"Spare part '{sparePart.Name}' updated successfully.";
                 return RedirectToAction(nameof(Index));
             }
             catch (DbUpdateConcurrencyException)

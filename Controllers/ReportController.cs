@@ -21,7 +21,7 @@ namespace SparePartsWeb.Controllers
 
         public IActionResult Index()
         {
-            // ✅ Include Vendor so it can be displayed
+            // Include Vendor so it can be displayed
             var parts = _context.SpareParts.Include(p => p.Vendor).ToList();
             return View(parts);
         }

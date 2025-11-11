@@ -17,201 +17,201 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SparePartsWeb
 build_property.RootNamespace = SparePartsWeb
-build_property.ProjectDir = C:\xampp\htdocs\SparePartsWeb\SparePartsWeb\
+build_property.ProjectDir = C:\Apache24\Apache24\htdocs\sparessys-1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\xampp\htdocs\SparePartsWeb\SparePartsWeb
+build_property.MSBuildProjectDirectory = C:\Apache24\Apache24\htdocs\sparessys-1
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/Admin/Views/Dashboard.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/Admin/Views/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Dashboard/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Equipments/Create.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Equipments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Equipments/Delete.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Equipments/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Equipments/Details.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Equipments/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Equipments/Edit.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Equipments/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Equipments/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Equipments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBtZW50c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Home/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Home/Privacy.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Maintenances/Create.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Maintenances/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Maintenances/Delete.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Maintenances/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Maintenances/Details.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Maintenances/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Maintenances/Edit.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Maintenances/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Maintenances/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Maintenances/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Reports/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Reports/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/RoleManagement/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/RoleManagement/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZU1hbmFnZW1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/RoleManagement/Manage.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/RoleManagement/Manage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZU1hbmFnZW1lbnRcTWFuYWdlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Shared/Error.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Shared/_LoginPartial.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/SpareParts/Create.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/SpareParts/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhcmVQYXJ0c1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/SpareParts/Delete.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/SpareParts/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhcmVQYXJ0c1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/SpareParts/Details.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/SpareParts/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhcmVQYXJ0c1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/SpareParts/Edit.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/SpareParts/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhcmVQYXJ0c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/SpareParts/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/SpareParts/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BhcmVQYXJ0c1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Statistics/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Statistics/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/UserManagement/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/UserManagement/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Vendors/Create.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Vendors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Vendors/Delete.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Vendors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Vendors/Details.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Vendors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Vendors/Edit.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Vendors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Vendors/Index.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Vendors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/_ViewImports.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/_ViewStart.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/xampp/htdocs/SparePartsWeb/SparePartsWeb/Views/Shared/_Layout.cshtml]
+[C:/Apache24/Apache24/htdocs/sparessys-1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bl6bvzc3xm

@@ -128,7 +128,7 @@ namespace SparePartsWeb.Areas.Identity.Pages.Account
             return Page();
         }
 
-        // ✅ Handles resending confirmation emails
+        // Handles resending confirmation emails
         public async Task<IActionResult> OnPostResendConfirmationAsync()
         {
             if (string.IsNullOrEmpty(UnconfirmedEmail))
