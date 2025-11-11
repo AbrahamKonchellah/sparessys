@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SparePartsWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7562950d92e00b70074873aeea30509bedeffc3f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04a623e45a474e9674e3598c395f21644de6bafa")]
 [assembly: System.Reflection.AssemblyProductAttribute("SparePartsWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SparePartsWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

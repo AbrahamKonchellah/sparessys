@@ -875,3 +875,5 @@ C:\Apache24\Apache24\htdocs\sparessys-1\obj\Debug\net9.0\refint\SparePartsWeb.dl
 C:\Apache24\Apache24\htdocs\sparessys-1\obj\Debug\net9.0\SparePartsWeb.pdb
 C:\Apache24\Apache24\htdocs\sparessys-1\obj\Debug\net9.0\SparePartsWeb.genruntimeconfig.cache
 C:\Apache24\Apache24\htdocs\sparessys-1\obj\Debug\net9.0\ref\SparePartsWeb.dll
+C:\Apache24\Apache24\htdocs\sparessys-1\bin\Debug\net9.0\DotNetEnv.dll
+C:\Apache24\Apache24\htdocs\sparessys-1\bin\Debug\net9.0\Sprache.dll
