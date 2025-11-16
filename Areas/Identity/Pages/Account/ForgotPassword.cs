@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.WebUtilities;
 using SparePartsWeb.Models;
 using SparePartsWeb.Services;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
 using System.Text.Encodings.Web;
 
 namespace SparePartsWeb.Areas.Identity.Pages.Account
@@ -66,24 +68,24 @@ namespace SparePartsWeb.Areas.Identity.Pages.Account
             var token = await _userManager.GeneratePasswordResetTokenAsync(user);
             _logger.LogInformation(" Token generated successfully for {Email}", user.Email);
 
-            var callbackUrl = Url.Page(
-                "/Account/ResetPassword",
-                pageHandler: null,
-                values: new { area = "Identity", code = token },
-                protocol: Request.Scheme);
+            // Encode token for URL safety
+            var encodedToken = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
 
-            var encodedUrl = HtmlEncoder.Default.Encode(callbackUrl);
-            _logger.LogInformation(" Reset link generated: {Url}", encodedUrl);
+            // Construct the URL manually to ensure correct routing
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
+            var callbackUrl = $"{baseUrl}/Identity/Account/ResetPassword?code={Uri.EscapeDataString(encodedToken)}&email={Uri.EscapeDataString(user.Email)}";
+
+            _logger.LogInformation(" Reset link generated: {Url}", callbackUrl);
 
             // Compose email
             var subject = "Reset Your Password";
             var body = $@"
                 <p>Hello {user.UserName},</p>
                 <p>You requested to reset your password. Click the link below:</p>
-                <p><a href='{encodedUrl}' style='background-color:#007bff;color:#fff;
+                <p><a href='{callbackUrl}' style='background-color:#007bff;color:#fff;
                 padding:10px 15px;text-decoration:none;border-radius:5px;'>Reset Password</a></p>
                 <br/>
-                <p>If you didn’t request this, ignore this email.</p>
+                <p>If you didn't request this, ignore this email.</p>
                 <p>Best regards,<br/>SparePartsWeb Team</p>";
 
             try

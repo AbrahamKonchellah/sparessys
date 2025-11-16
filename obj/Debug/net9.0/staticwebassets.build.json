@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BmGgXTBHONmcuhl5buWu0x1fKx2VZ8J5z+or2oPIqgw=",
+  "Hash": "MVlOjFmxp+Iex5jV203FlrT4+hk9I5AJRRxPnyRO3+U=",
   "Source": "SparePartsWeb",
   "BasePath": "_content/SparePartsWeb",
   "Mode": "Default",
@@ -2766,6 +2766,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\claudio-schwarz-yoBuglDQKMw-unsplash.jpg"
+    },
+    {
+      "Identity": "C:\\Apache24\\Apache24\\htdocs\\sparessys-1\\wwwroot\\Images\\sparesysicon.png",
+      "SourceId": "SparePartsWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Apache24\\Apache24\\htdocs\\sparessys-1\\wwwroot\\",
+      "BasePath": "_content/SparePartsWeb",
+      "RelativePath": "Images/sparesysicon#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mktx991wlf",
+      "Integrity": "9pBGXBYFvCUZ40vOyrVHoL5PTNoYJnMLPjRN+x0hqdI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\sparesysicon.png"
     },
     {
       "Identity": "C:\\Apache24\\Apache24\\htdocs\\sparessys-1\\wwwroot\\js\\site.js",
@@ -14579,6 +14600,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-+9ucvKo8V1/NzkkbL1i7guaL0nxzf5pguKmU02DUTUg="
+        }
+      ]
+    },
+    {
+      "Route": "Images/sparesysicon.mktx991wlf.png",
+      "AssetFile": "C:\\Apache24\\Apache24\\htdocs\\sparessys-1\\wwwroot\\Images\\sparesysicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9pBGXBYFvCUZ40vOyrVHoL5PTNoYJnMLPjRN+x0hqdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 17:20:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mktx991wlf"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/sparesysicon.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-9pBGXBYFvCUZ40vOyrVHoL5PTNoYJnMLPjRN+x0hqdI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/sparesysicon.png",
+      "AssetFile": "C:\\Apache24\\Apache24\\htdocs\\sparessys-1\\wwwroot\\Images\\sparesysicon.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"9pBGXBYFvCUZ40vOyrVHoL5PTNoYJnMLPjRN+x0hqdI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 16 Nov 2025 17:20:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-9pBGXBYFvCUZ40vOyrVHoL5PTNoYJnMLPjRN+x0hqdI="
         }
       ]
     },

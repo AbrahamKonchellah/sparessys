@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Images\\claudio-schwarz-yoBuglDQKMw-unsplash.jpg"
     },
     {
+      "Id": "C:\\Apache24\\Apache24\\htdocs\\sparessys-1\\wwwroot\\Images\\sparesysicon.png",
+      "PackagePath": "staticwebassets\\Images\\sparesysicon.png"
+    },
+    {
       "Id": "C:\\Apache24\\Apache24\\htdocs\\sparessys-1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

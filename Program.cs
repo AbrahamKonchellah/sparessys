@@ -16,8 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
 DotNetEnv.Env.Load(); // load .env file
 
 
-var dbPassword = Environment.GetEnvironmentVariable("db_password");// get password from env variable
-Console.WriteLine($"dbPassword='{dbPassword}'");
+var dbPassword = Environment.GetEnvironmentVariable("db_password");// get password from env file 
 var connectionString = $"Server=localhost;Database=SparePartsDB;User=root;Password={dbPassword}"; 
 
 builder.Services.AddControllersWithViews();
